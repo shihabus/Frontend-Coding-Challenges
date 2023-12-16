@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  --border-width: 50px;
+  --box-width: calc(2 * var(--border-width));
+}
+div {
+  border-radius: 50%;
+  border-width: var(--border-width);
+  border-style: solid;
+}
+
+div#outer {
+  width: calc(6 * var(--box-width));
+  height: calc(6 * var(--box-width));
+  background-color: orange;
+  border-color: red;
+}
+div#middle {
+  width: calc(4 * var(--box-width));
+  height: calc(4 * var(--box-width));
+  background-color: green;
+  border-color: yellow;
+  transform: translate(50px, 50px);
+}
+div#inner {
+  width: calc(2 * var(--box-width));
+  height: calc(2 * var(--box-width));
+  background-color: rgb(170, 8, 170);
+  border-color: rgb(27, 27, 251);
+  transform: translate(50px, 50px);
+}

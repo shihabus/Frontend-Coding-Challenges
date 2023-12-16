@@ -1,0 +1,36 @@
+:root {
+  --circle-thickness: 30px;
+}
+
+div {
+  border-radius: 50%;
+}
+
+#inner {
+  --inner-circle-size: calc(2 * var(--circle-thickness));
+
+  width: var(--inner-circle-size);
+  height: var(--inner-circle-size);
+  background-color: blueviolet;
+  border: var(--circle-thickness) solid blue;
+}
+
+#middle {
+  --middle-circle-size: calc(4 * var(--circle-thickness));
+
+  width: var(--middle-circle-size);
+  height: var(--middle-circle-size);
+  background-color: green;
+  border: var(--circle-thickness) solid yellow;
+  padding: var(--circle-thickness);
+}
+
+#outer {
+  --outer-circle-size: calc(8 * var(--circle-thickness));
+
+  width: var(--outer-circle-size);
+  height: var(--outer-circle-size);
+  background-color: orange;
+  border: var(--circle-thickness) solid orangered;
+  padding: var(--circle-thickness);
+}
