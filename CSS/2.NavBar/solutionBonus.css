@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #6e072d;
+    color: #fff;
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+
+li:nth-child(4){
+    margin-left: auto;
+}
+
+li:not(:nth-child(3),:last-of-type){
+    border-right: 1px solid #fff;
+}
+
+li:hover{
+    background-color: #b90e4d;
+}
