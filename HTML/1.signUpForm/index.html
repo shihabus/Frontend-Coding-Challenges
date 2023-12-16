@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up form</title>
+  </head>
+  <body>
+    <form>
+      <label for="username">User name:</label>
+      <input type="text" name="username" id="username" required />
+
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <br />
+
+      <label for="number">Phone number</label>
+      <input
+        type="tel"
+        name="phone-number"
+        id="number"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+
+      <br />
+
+      <label for="birthday">DOB</label>
+      <input type="date" name="birthday" id="birthday" />
+
+      <br />
+
+      <label for="tos">I agree to Terms of Service</label>
+      <input type="checkbox" name="tos" id="tos" required />
+
+      <br />
+
+      <input type="submit" value="Sign Up" />
+    </form>
+  </body>
+</html>
